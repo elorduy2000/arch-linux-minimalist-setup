@@ -16,19 +16,10 @@ function confirm() {
 #fi
 
 echo ""
-echo "                              <<< ARCH LINUX >>>                               "
-echo ""
-echo "           _       _                 _ _     _            _      _             "
-echo "          (_)     (_)               | (_)   | |          (_)    (_)            "
-echo " _ __ ___  _ _ __  _ _ __ ___   __ _| |_ ___| |_     _ __ _  ___ _ _ __   __ _ "
-echo "| '_ ` _ \| | '_ \| | '_ ` _ \ / _` | | / __| __|   | '__| |/ __| | '_ \ / _` |"
-echo "| | | | | | | | | | | | | | | | (_| | | \__ \ |_    | |  | | (__| | | | | (_| |"
-echo "|_| |_| |_|_|_| |_|_|_| |_| |_|\__,_|_|_|___/\__|   |_|  |_|\___|_|_| |_|\__, |"
-echo "                                                                          __/ |"
-echo "                                                                         |___/ "
-echo "    (generated with https://www.askapache.com/online-tools/figlet-ascii/)      "
+cat figlet.txt
 echo ""
 echo ""
+
 echo "STARTED!"
 echo ""
 
@@ -39,15 +30,15 @@ echo ">>> Ensuring folders..."
 echo ""
 
 echo ">>> Copying files..."
-    cp -r ~/Downloads/arch-linux-setup/Wallpapers/* ~/Wallpapers/
-    cp -r ~/Downloads/arch-linux-setup/Scripts/* ~/Scripts/
+    cp -r ~/Downloads/arch-linux-minimalist-setup/Wallpapers/* ~/Wallpapers/
+    cp -r ~/Downloads/arch-linux-minimalist-setup/Scripts/* ~/Scripts/
 echo ""
 
 echo ">>> Ricing console..."
     # Set terminus font
     sudo pacman -S --noconfirm --needed terminus-font
     sudo mv /etc/vconsole.conf /etc/vconsole.conf.backup
-    sudo cp ~/Downloads/arch-linux-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
+    sudo cp ~/Downloads/arch-linux-minimalist-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
     setfont ter-u22n
 
     # This packages already have been installed!
@@ -55,7 +46,7 @@ echo ">>> Ricing console..."
     #sudo pacman -S --noconfirm --needed git
 
     sudo pacman -S --noconfirm --needed fastfetch
-    sudo cp ~/Downloads/arch-linux-setup/dotfiles/fastfetch/resilente.jsonc /usr/share/fastfetch/presets/resilente.jsonc
+    sudo cp ~/Downloads/arch-linux-minimalist-setup/dotfiles/fastfetch/resilente.jsonc /usr/share/fastfetch/presets/resilente.jsonc
 
     sudo pacman -S --noconfirm --needed onefetch
     sudo pacman -S --noconfirm --needed tldr    
@@ -81,7 +72,7 @@ echo ">>> Ricing bash..."
 
     sudo pacman -S --noconfirm --needed starship
     mv ~/.bashrc ~/.bashrc.backup
-    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
+    cp ~/Downloads/arch-linux-minimalist-setup/dotfiles/bash/.bashrc ~/.bashrc
 echo ""
 
 echo ">>> Ricing hyprland..."
@@ -96,7 +87,7 @@ echo ""
 
 echo ">>> Copying configuration files..."
     mv ~/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf.backup
-    cp -r ~/Downloads/arch-linux-setup/dotfiles/.config/* ~/.config/
+    cp -r ~/Downloads/arch-linux-minimalist-setup/dotfiles/.config/* ~/.config/
 echo ""
 
 echo ">>> Installing applications..."
