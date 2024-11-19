@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = {
 --	color_scheme = "Catppuccin Mocha",
-	font = wezterm.font_with_fallback({ "FiraCode Nerd Font Mono", "JetBrainsMono NF" }),
+	font = wezterm.font_with_fallback({ "Fira Code", "JetBrainsMono NF" }),
 	font_size = 16,
 	line_height = 1.1,
 	window_background_opacity = 0.85,

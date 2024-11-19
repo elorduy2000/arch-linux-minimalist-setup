@@ -76,6 +76,7 @@ echo ">>> Ricing bash..."
 echo ""
 
 echo ">>> Ricing hyprland..."
+    sudo pacman -S --noconfirm --needed ttf-fira-code
     sudo pacman -S --noconfirm --needed hyprland
     sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
