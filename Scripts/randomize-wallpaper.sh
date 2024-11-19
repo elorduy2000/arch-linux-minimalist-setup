@@ -1,7 +1,7 @@
 #!/bin/bash
 
 current="00-current.jpg"
-path="~/Wallpapers/"
+path="$HOME/Wallpapers/"
 current_path="$path$current"
 
 ls $path | sort -R | tail -$N | while read file; do

@@ -32,6 +32,7 @@ echo ""
 echo ">>> Copying files..."
     cp -r ~/Downloads/arch-linux-minimalist-setup/Wallpapers/* ~/Wallpapers/
     cp -r ~/Downloads/arch-linux-minimalist-setup/Scripts/* ~/Scripts/
+    find ~/Scripts/ -type f -exec chmod +x {} \;
 echo ""
 
 echo ">>> Ricing console..."
