@@ -54,7 +54,8 @@ echo ">>> Ricing console..."
     sudo pacman -S --noconfirm --needed btop
     sudo pacman -S --noconfirm --needed htop 
     sudo pacman -S --noconfirm --needed fzf 
-    sudo pacman -S --noconfirm --needed yazi     
+    sudo pacman -S --noconfirm --needed bat     
+    sudo pacman -S --noconfirm --needed glow
     sudo pacman -S --noconfirm --needed duf  
 echo ""
 
@@ -78,13 +79,13 @@ echo ""
 
 echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed ttf-fira-code
+    sudo pacman -S --noconfirm --needed ttf-firacode-nerd
     sudo pacman -S --noconfirm --needed hyprland
+    sudo pacman -S --noconfirm --needed foot
     sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
     sudo pacman -S --noconfirm --needed waybar
-    sudo pacman -S --noconfirm --needed wlogout
     paru -S --noconfirm --needed python-pywal16
-    paru -S --noconfirm --needed wezterm-git
 echo ""
 
 echo ">>> Copying configuration files..."
@@ -93,9 +94,9 @@ echo ">>> Copying configuration files..."
 echo ""
 
 echo ">>> Installing applications..."
-	sudo pacman -S --noconfirm --needed dolphin
+	sudo pacman -S --noconfirm --needed thunar
 	sudo pacman -S --noconfirm --needed nwg-look	
-	sudo pacman -S --noconfirm --needed vivaldi
+	sudo pacman -S --noconfirm --needed firefox
 	sudo pacman -S --noconfirm --needed vlc
 	sudo pacman -S --noconfirm --needed libreoffice-still
 echo ""
